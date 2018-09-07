@@ -1,0 +1,17 @@
+.navbar-item img {
+  max-height: 2.75rem;
+}
+.navbar-burger {
+  margin-left:0;
+  margin-right: auto;
+}
+.is-vertical-center {
+  display: flex;
+  align-items: center;
+}
+.profile{
+  display: flex;
+}
+.navbar-link::after {
+  border-color:$danger
+}

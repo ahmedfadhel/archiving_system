@@ -5,10 +5,9 @@
 // Variables
 @import 'variables';
 
-// Bootstrap
-@import '~bootstrap/scss/bootstrap';
-
-.navbar-laravel {
-  background-color: #fff;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
-}
+// Buefy && Bulma
+@import 'bulma-rtl';
+@import '~buefy/src/scss/buefy-build';
+@import '~font-awesome/scss/font-awesome';
+@import 'helper';
+@import 'main';
