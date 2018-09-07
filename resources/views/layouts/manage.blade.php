@@ -22,12 +22,26 @@
 <body>
     <div class="container is-fullhd">
         @include('_partials._mainNav')
-        <div id="app">
-            <main class="py-4">
-                @yield('content')
-            </main>
+        <div class="main-container">
+            <div class="right-container" id="side-nav">
+                @include('_partials._sideNav')
+            </div>
+            <div class="left-container">
+               
+                <main>
+                    @yield('content')
+                </main>
+            </div>
         </div>
     </div>
+    <script>
+        const navBut = document.getElementsByClassName("navbar-burger")[0];
+        const sideNav = document.getElementById('side-nav');
+
+        navBut.addEventListener('click',function(){
+            sideNav.classList.toggle('is-shown');                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                
+        })
+    </script>
     @yield('scripts')
 </body>
 </html>

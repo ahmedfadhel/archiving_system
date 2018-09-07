@@ -1,3 +1,4 @@
+// Main Nav Style section Start
 .navbar-item img {
   max-height: 2.75rem;
 }
@@ -5,6 +6,8 @@
   margin-left:0;
   margin-right: auto;
 }
+
+
 .is-vertical-center {
   display: flex;
   align-items: center;
@@ -15,3 +18,45 @@
 .navbar-link::after {
   border-color:$danger
 }
+// Main Nav Style section End
+
+//Side Nav Section Style Start
+.main-container{
+  display: flex;
+  justify-content: start;
+  height: 1000px;
+  padding: 0px 12px;
+}
+.right-container{
+  @include until($desktop) {
+    // border-bottom: 1px solid green;
+    width: 0rem;
+    &.is-shown{
+      width:14rem;
+    }
+  }
+  width: 14rem;
+  .menu-label{
+    font-size:1rem;
+  }
+  .menu-list {
+    li{
+      ul{
+        display: none;
+        border-left:0;
+        border-right:1px solid $danger;
+        padding-left: 1.2rem;
+        li{
+          display: flex;
+          justify-content: space-between;
+        }
+      }
+    }
+  }
+}
+.left-container{
+  transition: 0.2s width ease;
+ background-color:blue;
+  width: 100%;
+}
+//Side Nav Section Style End
