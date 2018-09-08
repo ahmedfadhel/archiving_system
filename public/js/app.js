@@ -32005,7 +32005,7 @@ module.exports = function spread(callback) {
 
 var navBtn = document.getElementsByClassName("navbar-burger")[0];
 var accordions = document.getElementsByClassName('has-submenu');
-
+var sideNav = document.getElementById('side-nav');
 function setSubmenuStyles(submenu, maxHeight, margins) {
     submenu.style.maxHeight = maxHeight;
     submenu.style.marginTop = margins;

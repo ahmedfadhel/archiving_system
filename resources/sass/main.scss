@@ -16,7 +16,7 @@ body{
 
 .is-vertical-center {
   display: flex;
-  align-items: center;
+  justify-content: space-around
 }
 .profile{
   display: flex;
@@ -58,9 +58,22 @@ body{
   }
   
 }
+
+
+//Side Nav Section Style End
+//Main Content section
+
 .left-container{
   transition: 0.2s width ease;
   width: 100%;
   background-color:$left-container-color;
 }
-//Side Nav Section Style End
+@media screen and (min-width: 769px){
+  .column.is-offset-one-quarter, .column.is-offset-one-quarter-tablet {
+    margin-right: 25%;
+  }
+}
+//Login Section style Start
+.title,.label{
+  font-weight: 500
+}

@@ -1,6 +1,6 @@
 const navBtn = document.getElementsByClassName("navbar-burger")[0];
-const accordions = document.getElementsByClassName('has-submenu')
-
+const accordions = document.getElementsByClassName('has-submenu');
+const sideNav = document.getElementById('side-nav');
 function setSubmenuStyles (submenu, maxHeight, margins) {
     submenu.style.maxHeight = maxHeight
     submenu.style.marginTop = margins
