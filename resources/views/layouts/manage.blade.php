@@ -10,7 +10,6 @@
     <title>{{ config('app.name', 'Laravel') }}</title>
 
     <!-- Scripts -->
-    <script src="{{ asset('js/app.js') }}" defer></script>
 
     <!-- Fonts -->
     <link rel="dns-prefetch" href="https://fonts.gstatic.com">
@@ -24,7 +23,7 @@
         @include('_partials._mainNav')
         <div class="main-container">
             <div class="right-container" id="side-nav">
-                @include('_partials._sideNav')
+                @include('_partials._manageSideNav')
             </div>
             <div class="left-container">
                
@@ -34,14 +33,7 @@
             </div>
         </div>
     </div>
-    <script>
-        const navBut = document.getElementsByClassName("navbar-burger")[0];
-        const sideNav = document.getElementById('side-nav');
-
-        navBut.addEventListener('click',function(){
-            sideNav.classList.toggle('is-shown');                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                
-        })
-    </script>
+    <script src="{{ asset('js/app.js') }}"></script>
     @yield('scripts')
 </body>
 </html>

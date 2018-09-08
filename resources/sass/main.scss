@@ -1,4 +1,10 @@
+body{
+ 
+}
 // Main Nav Style section Start
+.navbar{
+  box-shadow: 0 2px 8px -2px rgba(0,0,0,.2);
+}
 .navbar-item img {
   max-height: 2.75rem;
 }
@@ -25,9 +31,11 @@
   display: flex;
   justify-content: start;
   height: 1000px;
-  padding: 0px 12px;
+  padding: 0px 12px 0px 0px;
 }
 .right-container{
+  box-shadow: -5px 0 4px -5px #333;
+
   @include until($desktop) {
     // border-bottom: 1px solid green;
     width: 0rem;
@@ -39,24 +47,20 @@
   .menu-label{
     font-size:1rem;
   }
-  .menu-list {
-    li{
-      ul{
-        display: none;
-        border-left:0;
-        border-right:1px solid $danger;
-        padding-left: 1.2rem;
-        li{
-          display: flex;
-          justify-content: space-between;
-        }
-      }
-    }
+  .submenu {
+    max-height: 0;
+    overflow: hidden;
+    transition: all 0.2s ease-in-out;
   }
+  .menu-list li ul {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  
 }
 .left-container{
   transition: 0.2s width ease;
- background-color:blue;
   width: 100%;
+  background-color:$left-container-color;
 }
 //Side Nav Section Style End

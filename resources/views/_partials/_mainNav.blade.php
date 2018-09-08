@@ -1,4 +1,4 @@
-<nav class="navbar" role="navigation" aria-label="main navigation">
+<nav class="navbar p-t-5 p-b-5" role="navigation" aria-label="main navigation">
 	<div class="navbar-brand">
 		<a class="navbar-item" href="#">
 			<img src="{{ asset('imgs/logo.png') }}" alt="Bulma: a modern CSS framework based on Flexbox" >
