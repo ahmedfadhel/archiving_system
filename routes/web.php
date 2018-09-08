@@ -12,9 +12,20 @@
 */
 
 Route::get('/', function () {
-    return view('auth.login');
+    return view('welcome');
 });
 
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+// Route::get('/dashboard', 'HomeController@dashboard')->name('dashboard');
+Route::group(array('prefix' => 'dashboard'), function()
+{
+    Route::get('/', 'HomeController@dashboard')->name('dashboard');
+
+    Route::get('users', function()
+    {
+        //
+    });
+
+});

@@ -10,6 +10,9 @@
 		</a>
 	</div>
 	<div class="navbar-start">
+    @guest
+
+    @else
     <div class="profile is-hidden-touch m-l-12">
       <div class="navbar-item has-dropdown is-hoverable ">
         <a class="navbar-link has-text-danger">
@@ -19,8 +22,12 @@
             <a class="navbar-item" href="#">
             الملف الشخصي
             </a>
-            <a class="navbar-item" href="#">
+            <a class="navbar-item" href="{{ route('logout') }}" onclick="event.preventDefault();
+            document.getElementById('logout-form').submit();">
               تسجيل الخروج
+            <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                @csrf
+            </form>
             </a>
         </div>
       </div>
@@ -30,6 +37,7 @@
         </figure>
       </div>
     </div>
+    @endguest
   </div>
 </nav>
 

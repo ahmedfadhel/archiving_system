@@ -14,7 +14,7 @@
 			</div>
 			<div class="card-content">
 				<h1 class="title">تسجيل الدخول</h1>
-				<form action="" method="POST" role="form">
+			<form action="{{ route('login') }}" method="POST" role="form">
 					{{csrf_field()}}
 					{{-- First Form Lable and input start --}}
 					<div class="field">
@@ -38,9 +38,10 @@
 						@endif
 					</div>
 					{{-- Second Form Lable and input End --}}
+					<button type="submit" class=" button is-danger is-outlined is-fullwidth m-t-30">دخول</button>
 				</form>
 
-				<button type="submit" class=" button is-danger is-outlined is-fullwidth m-t-30">دخول</button>
+				
 			</div>
 		</div>
 	</div>

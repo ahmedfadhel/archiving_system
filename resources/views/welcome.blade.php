@@ -79,7 +79,7 @@
 
             <div class="content">
                 <div class="title m-b-md">
-                    Laravel
+                    مصرف الاتحاد الاسلامي
                 </div>
 
                 <div class="links">

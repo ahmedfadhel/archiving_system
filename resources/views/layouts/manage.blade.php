@@ -22,9 +22,14 @@
     <div class="container is-fullhd">
         @include('_partials._mainNav')
         <div class="main-container">
+            @guest
+            
+            @else
             <div class="right-container" id="side-nav">
                 @include('_partials._manageSideNav')
-            </div>
+            </div> 
+            @endguest
+            
             <div class="left-container">
                
                 <main>
