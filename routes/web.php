@@ -23,9 +23,7 @@ Route::group(array('prefix' => 'dashboard'), function()
 {
     Route::get('/', 'HomeController@dashboard')->name('dashboard');
 
-    Route::get('users', function()
-    {
-        //
-    });
-
+    Route::resource('users', 'UserController');
+    Route::resource('roles', 'RoleController');
+    Route::resource('permissions', 'PermissionController');
 });

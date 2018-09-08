@@ -30,11 +30,8 @@
             </div> 
             @endguest
             
-            <div class="left-container">
-               
-                <main>
-                    @yield('content')
-                </main>
+            <div class="left-container" id="app">
+                @yield('content')
             </div>
         </div>
     </div>

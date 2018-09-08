@@ -4,7 +4,7 @@
       العامة
     </p>
     <ul class="menu-list">
-      <li><a href="#" class="is-active">الرئيسية</a></li>
+      <li><a href="#">الرئيسية</a></li>
     </ul>
     <p class="menu-label">
       الادارة

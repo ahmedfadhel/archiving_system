@@ -1,4 +1,4 @@
-@import url(https://fonts.googleapis.com/css?family=Nunito);@charset "UTF-8";
+@import url(https://fonts.googleapis.com/css?family=Nunito);@import url(https://fonts.googleapis.com/css?family=Cairo:400,600);@charset "UTF-8";
 
 /*! bulma.io v0.6.1 | MIT License | github.com/mohammadrafigh/bulma-rtl */
 
@@ -449,7 +449,7 @@ button,
 input,
 select,
 textarea {
-  font-family: BlinkMacSystemFont, -apple-system, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  font-family: BlinkMacSystemFont, -apple-system, "Cairo", "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
 }
 
 code,
@@ -18154,28 +18154,27 @@ label.panel-block:hover {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: start;
-  height: 1000px;
-  padding: 0px 12px 0px 0px;
+  padding: 0px 0px 0px 0px;
+  background-color: #F7F3F4;
 }
 
 .right-container {
   -webkit-box-shadow: -5px 0 4px -5px #333;
           box-shadow: -5px 0 4px -5px #333;
+  background-color: white;
   width: 14rem;
 }
 
 @media screen and (max-width: 1087px) {
-  .right-container {
-    width: 0rem;
-  }
-
   .right-container.is-shown {
-    width: 14rem;
+    display: block;
   }
 }
 
 .right-container .menu-label {
-  font-size: 1rem;
+  font-weight: 600;
+  font-size: 1.25rem;
+  letter-spacing: 0;
 }
 
 .right-container .submenu {
@@ -18183,6 +18182,8 @@ label.panel-block:hover {
   overflow: hidden;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
+  border-right: 1px solid #e84339;
+  border-left: 0px;
 }
 
 .right-container .menu-list li ul {
@@ -18194,7 +18195,9 @@ label.panel-block:hover {
   -webkit-transition: 0.2s width ease;
   transition: 0.2s width ease;
   width: 100%;
-  background-color: #F7F3F4;
+  background-color: white;
+  margin: 10px 25px;
+  padding: 5px 10px;
 }
 
 @media screen and (min-width: 769px) {
@@ -18206,6 +18209,10 @@ label.panel-block:hover {
 
 .title,
 .label {
-  font-weight: 500;
+  font-weight: 600;
+}
+
+.table.is-hoverable tbody tr:not(.is-selected):hover {
+  background-color: #ff7b73;
 }
 
